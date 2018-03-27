@@ -41,9 +41,10 @@ table { border-collapse:collapse; }
     bottom:0;
     box-sizing: border-box;
     height: 2.5rem;
-    padding: 0.4rem;
+    padding: 0.5rem;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 1rem;
+    z-index: 100;
     background: -webkit-linear-gradient(transparent, #000000); /* Safari 5.1 - 6.0 */
     background: -o-linear-gradient(transparent, #000000); /* Opera 11.1 - 12.0 */
     background: -moz-linear-gradient(transparent, #000000); /* Firefox 3.6 - 15 */
