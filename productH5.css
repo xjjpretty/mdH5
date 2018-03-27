@@ -1,6 +1,6 @@
 /***************  css reset  ****************/
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0 ; }
-body { background:#f0f5fa; color:#333;font-family:Microsoft YaHei,Verdana, Arial, Helvetica, sans-serif; padding-right: 0 !important}
+body { background:#f2f3f5; color:#333;font-family:Microsoft YaHei,Verdana, Arial, Helvetica, sans-serif; padding-right: 0 !important}
 td,th,caption { }
 h1, h2, h3, h4, h5, h6 { font-weight:normal; }
 address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
@@ -55,7 +55,7 @@ table { border-collapse:collapse; }
 }
 /****头部信息****/
 .header{
-
+    background: #fff;
 }
 .header .header-title{
     font-size: 1.3rem;
@@ -66,8 +66,28 @@ table { border-collapse:collapse; }
 }
 .header .header-price{
     color: #ff6a00;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
+    padding-bottom: 0.2rem;
 }
 .header .header-price em{
     font-size: 1.3rem;
+}
+.header .header-discourt{
+    background: #fff6f5;
+    font-size: 0.9rem;
+}
+.header .header-discourt span{
+    background: #ff6a00;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    padding: 0.1rem 0.2rem;
+    color: #fff;
+    margin-top: 1px;
+}
+.header .header-discourt ul{
+    margin-left: 2.7rem;
+}
+.header .header-discourt ul li{
+    height: 1.5rem;
+    line-height: 1.5rem;
 }
