@@ -1,0 +1,48 @@
+/***************  css reset  ****************/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0 ; }
+body { background:#f0f5fa; color:#333; font-size:14px; font-family:Microsoft YaHei,Verdana, Arial, Helvetica, sans-serif; padding-right: 0 !important}
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:none; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+html{overflow-y:auto;font-size: 14px}
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif;outline: none }
+table { border-collapse:collapse; }
+.show-tr{display: table-row!important;}
+/***************  css common  ****************/
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+.pr{
+    position: relative;
+}
+.pa{
+    position: absolute;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/****头部轮播****/
+.swiper-container-top{
+    width: 100%;
+    font-size: 0px;
+}
+.swiper-container-top img{
+    width: 100%;
+}
+.swiper-container-top .pa{
+    width: 100%;
+    bottom:0;
+    box-sizing: border-box;
+    height: 2.5rem;
+    padding: 0.4rem;
+    background: -webkit-linear-gradient(transparent, #000000); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(transparent, #000000); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(transparent, #000000); /* Firefox 3.6 - 15 */
+    background: linear-gradient(transparent, #000000); /* 标准的语法 */
+}
