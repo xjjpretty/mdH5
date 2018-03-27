@@ -16,6 +16,13 @@
                     disableOnInteraction: false,
                 }
             });
+            //日期滚动
+            var swiperDate = new Swiper('.swiper-container', {
+                slidesPerView: 'auto',
+                freeMode: true,
+                mousewheel: true,
+            });
+
         },
     }
 }();

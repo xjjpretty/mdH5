@@ -31,6 +31,14 @@ table { border-collapse:collapse; }
 .p5{
     padding: 0.5rem;
 }
+i.dropRight{
+    background: url(img/dropRight.png) no-repeat;
+    width: 0.5rem;
+    height: 1rem;
+    background-size: 100%;
+    float: right;
+    margin-top: 0.3rem;
+}
 /****头部轮播****/
 .swiper-container-top{
     width: 100%;
@@ -95,4 +103,28 @@ table { border-collapse:collapse; }
 .group{
     background: #fff;
     margin-top: 0.6rem;
+}
+.group .group-from{
+    border-bottom: 1px solid #e1e1e1;
+    width: 100%;
+    display: block;
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+    margin-left: 0.2rem;
+}
+.group .group-from i.map{
+    display: inline-block;
+    width: 0.9rem;
+    height: 1.3rem;
+    background: url(img/address.png) no-repeat;
+    background-size: 100%;
+    vertical-align: middle;
+    margin-right: 0.2rem;
+}
+.group .group-from span{
+
+}
+.swiper-slide{
+    width: auto;
 }
