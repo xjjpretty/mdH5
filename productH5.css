@@ -31,6 +31,7 @@ table { border-collapse:collapse; }
 .swiper-container-top{
     width: 100%;
     font-size: 0px;
+    overflow: hidden;
 }
 .swiper-container-top img{
     width: 100%;
@@ -41,6 +42,8 @@ table { border-collapse:collapse; }
     box-sizing: border-box;
     height: 2.5rem;
     padding: 0.4rem;
+    color: #ffffff;
+    font-size: 14px;
     background: -webkit-linear-gradient(transparent, #000000); /* Safari 5.1 - 6.0 */
     background: -o-linear-gradient(transparent, #000000); /* Opera 11.1 - 12.0 */
     background: -moz-linear-gradient(transparent, #000000); /* Firefox 3.6 - 15 */
