@@ -17,7 +17,7 @@
                 }
             });
             //日期滚动
-            var swiperDate = new Swiper('.swiper-container', {
+            var swiperDate = new Swiper('.swiper-container-group', {
                 slidesPerView: 'auto',
                 freeMode: true,
                 mousewheel: true,
