@@ -9,8 +9,8 @@ a { color:#555; text-decoration:none; }
 a:hover { text-decoration:none; }
 img { border:none; }
 ol,ul,li { list-style:none; }
-html{overflow-y:auto;font-size: 14px}
-input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif;outline: none }
+html{overflow-y:auto;}
+input, textarea, select, button { font-family:Verdana,Helvetica,Arial,sans-serif;outline: none }
 table { border-collapse:collapse; }
 .show-tr{display: table-row!important;}
 /***************  css common  ****************/
@@ -30,6 +30,17 @@ table { border-collapse:collapse; }
 }
 .p5{
     padding: 0.5rem;
+}
+
+@media screen and (max-width: 414px) {
+    html{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 375px) {
+    html{
+        font-size: 12px;
+    }
 }
 i.dropRight{
     background: url(img/dropRight.png) no-repeat;
@@ -123,33 +134,338 @@ i.dropRight{
     vertical-align: middle;
     margin-right: 0.2rem;
 }
-.group .swiper-container-group{
+.group .group-date{
     overflow: hidden;
-    padding: 1rem 0 0.5rem;
+    font-size: 0;
+    padding: 1rem 0 0.5rem 0;
 }
-.group .swiper-container-group .swiper-slide{
-    width: auto;
-}
-.group .swiper-container-group ul{
+.group-date ul{
     white-space: nowrap;
-}
-.group .swiper-container-group li{
     display: inline-block;
-    width: 18%;
-    border: 1px solid #d6d6d6;
-    border-radius: 3px;
+    width: 85%;
+    vertical-align: top;
+}
+.group-date li{
+    display: inline-block;
+    width: 20%;
     box-sizing: border-box;
-    padding: 0.3rem 0.5rem;
-    margin-right: 0.5rem;
     text-align: center;
 }
-.group .swiper-container-group span{
-
+.group-date li div{
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    padding: 0.3rem 0.3rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
 }
-.group .swiper-container-group span.date{
+.group-date li span.date{
     display: block;
 }
-.group .swiper-container-group span.money{
+.group-date li span.money{
     display: block;
     color: #ff6a00;
+}
+.group-date .group-more{
+    display: inline-block;
+    width: 14%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    padding: 0.3rem 0.3rem;
+    font-size: 1rem;
+    vertical-align: top;
+}
+/****tab****/
+.line{
+    margin-top: 0.6rem;
+}
+.nav-tab{
+    background: #ffffff;
+    font-size: 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+.nav-tab li{
+    font-size: 1rem;
+    display: inline-block;
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.nav-tab li a{
+    display: block;
+    width: 100%;
+    padding: 0.7rem 0;
+}
+.nav-tab li.on{
+    border-bottom: 2px solid #1da0ec;
+}
+/****线路****/
+.line-list{
+    background: #ffffff;
+    padding-right: 0;
+}
+.line-list ul{
+    font-size: 0;
+}
+.line-list ul li{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    padding-right: 0.5rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.line-list ul div{
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    padding: 0.3rem 0;
+}
+.line-list ul li.on div{
+    color: #1da0ec;
+    border: 1px solid #1da0ec;
+}
+.line-list ul li.on:before{
+    content: "";
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0;
+    width: 1rem;
+    height: 1rem;
+    background: url("img/cur.png") no-repeat;
+    background-size: 100%;
+}
+.line-list ul li span{
+    display: block;
+}
+.line-list ul li span.group-date-title{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.line-list ul li span.group-date-body{
+    font-size: 0.8rem;
+}
+/****item-list****/
+.tab-wrap>div{
+    background: #ffffff;
+}
+.tab-wrap>div h4{
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+/****产品特色****/
+.item1 h5{
+    font-size: 1.1rem;
+    color: #999;
+    margin-bottom: 0.8rem
+}
+.item1-1{
+    margin-bottom: 1.3rem;
+}
+.item1-1 ul{
+    font-size: 0;
+    width: 100%;
+}
+.item1-1 ul li{
+    font-size: 1rem;
+    display: inline-block;
+    width: 33.3%;
+    background: #ededed;
+    text-align: center;
+    padding: 0.8rem 0;
+}
+.item1-1 ul li span{
+    display: block;
+    margin-top: 0.3rem;
+}
+.item1-1 ul li.grey{
+    background: #f5f5f5;
+}
+.item1-1 ul li i{
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 auto;
+}
+.item1-1 ul li i.item1-1-1{
+    background: url("img/icon1.png") no-repeat;
+    background-size: 100%;
+}
+.item1-1 ul li i.item1-1-2{
+    background: url("img/icon2.png") no-repeat;
+    background-size: 100%;
+}
+.item1-1 ul li i.item1-1-3{
+    background: url("img/icon3.png") no-repeat;
+    background-size: 100%;
+}
+.item1-2{
+    margin-bottom: 1.3rem;
+}
+.item1-3 ul{
+
+}
+.item1-3 ul li{
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+.item1-3 ul li>span{
+    float: left;
+    border: 1px solid #d6d6d6;
+    padding: 0.1rem 0.2rem;
+    font-size: 0.8rem;
+}
+.item1-3 ul li div.right{
+    margin-left: 2.9rem;
+}
+.item1-3 ul li div.right p.grey{
+    color: #666;
+}
+/****行程安排****/
+.item2{
+    margin-top: 0.6rem;
+}
+.item2 ul.day-list{
+
+}
+.item2 ul.day-list>li{
+
+}
+.item2 ul.day-list>li h5{
+    font-size: 1.1rem;
+    color: #666666;
+}
+.item2 ul.day-list>li h5 span{
+    display: inline-block;
+    width: 1.5rem;
+}
+.item2 ul.day-list ul{
+
+}
+.item2 ul.day-list ul li{
+    overflow: hidden;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.item2 ul.day-list ul li i{
+    float: left;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 0.2rem;
+}
+.item2 ul.day-list ul li i.hotel{
+    background: url(img/icon4.png) no-repeat;
+    background-size: 100%;
+}
+.item2 ul.day-list ul li div.right{
+    margin-left: 2rem;
+}
+.item2 ul.day-list ul li p{
+    color: #666666;
+}
+.item2 ul.day-list ul li p.line1{
+    color: #333333;
+}
+.item2 ul.day-list ul li p.line1 em{
+
+}
+.item2 ul.day-list ul li p.time{
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+.item2 ul.day-list ul li p.remark{
+    color: #333333;
+    margin: 0.5rem 0;
+}
+.item2 ul.day-list ul li p.remark em{
+    color: #666666;
+}
+.item2 ul.day-list ul li .img-warp{
+    position: relative;
+    font-size: 0;
+}
+.item2 ul.day-list ul li img{
+    width: 100%;
+    height: 12rem;
+}
+.item2 ul.day-list ul li .bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 1rem;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    padding: 0.5rem;
+    color: #fff;
+}
+/***费用说明****/
+.item3,.item4{
+    margin-top: 0.6rem;
+}
+.item3 h5,
+.item4 h5{
+    font-size: 1.1rem;
+    color: #999;
+    margin-bottom: 0.8rem
+}
+.item3 .block,
+.item4 .block{
+    margin-bottom: 0.8rem;
+}
+/***更多****/
+.more{
+    margin-top: 0.6rem;
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+    background: #fff;
+}
+.more>div{
+    overflow: hidden;
+    padding: 0.7rem 0 0.7rem;
+}
+.more>div p{
+    float: left;
+}
+.more .custom{
+    border-bottom: 1px solid #d6d6d6;
+    padding: 0.5rem 0 0.7rem;
+}
+.more .activity{
+    padding: 0.7rem 0 0.5rem;
+}
+/***电话咨询****/
+.btns{
+    position: fixed;
+    bottom: -2px;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    font-size: 0;
+    width: 100%;
+}
+.btns a{
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+.btns a.phone{
+    width: 30%;
+    background: #fafafa;
+    border-top: 1px solid #e1e1e1;
+}
+.btns a.phone i{
+    display: inline-block;
+    background: url(img/icon6.png) no-repeat;
+    background-size: 100%;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: middle;
+    margin-right: 0.3rem;
+}
+.btns a.submit{
+    width: 70%;
+    background: #ff6a00;
+    border-top: 1px solid #ff6a00;
+    color: #ffffff;
 }
