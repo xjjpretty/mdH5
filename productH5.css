@@ -419,6 +419,7 @@ i.dropRight{
     border-top: 1px solid #d6d6d6;
     border-bottom: 1px solid #d6d6d6;
     background: #fff;
+    padding-bottom: 3.2rem;
 }
 .more>div{
     overflow: hidden;
@@ -437,7 +438,7 @@ i.dropRight{
 /***电话咨询****/
 .btns{
     position: fixed;
-    bottom: -2px;
+    bottom: 0px;
     height: 3.2rem;
     line-height: 3.2rem;
     font-size: 0;
